@@ -48,3 +48,34 @@
     color: black;
   }
 }
+
+@media screen and (max-width: 1280px) {
+  .main {
+    margin-left: 0px;
+    padding-top: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .main{
+    .centerBox {
+      .tableResponse {
+        overflow-x: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .main{
+    .centerBox {
+      .inputForm {
+        flex-direction: column;
+        gap: 0.5rem;
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

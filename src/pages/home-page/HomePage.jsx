@@ -179,7 +179,7 @@ const HomePage = () => {
         </form>
         <div className={classes.tableResponse}>
           {table !== null &&
-          <Table sx={{
+          <Table tableLayout="fixed" sx={{
             backgroundColor: 'white',
             borderRadius: '0.6rem',
             padding: '.6rem 0.7rem 0.5rem',
@@ -206,12 +206,12 @@ const HomePage = () => {
           }}>
             <thead>
               <tr>
-                <th >Id</th>
-                <th >Prefix</th>
-                <th >ROAS</th>
-                <th >RPKI</th>
-                <th style={{ textAlign: 'center' }}>Status</th>
-                <th style={{ textAlign: 'center' }}>Action</th>
+                <th style={{ width: 100 }}>Id</th>
+                <th style={{ width: 100 }}>Prefix</th>
+                <th style={{ width: 100 }}>ROAS</th>
+                <th style={{ width: 100 }}>RPKI</th>
+                <th style={{ textAlign: 'center', width: 100 }}>Status</th>
+                <th style={{ textAlign: 'center', width: 100 }}>Action</th>
               </tr>
             </thead>
             <tbody>
